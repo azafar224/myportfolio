@@ -18,9 +18,12 @@ a {
 
 /* Header Section */
 header {
-  background-color: #f5f5f5;
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: top center;
   padding: 50px 20px;
   text-align: center;
+  color: white;
 }
 
 /* Navigation */
@@ -47,6 +50,7 @@ header {
 
 .hero-text h1 {
   font-size: 2.5rem;
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -54,6 +58,10 @@ header {
   font-size: 1.75rem;
   color: #4caf50;
   margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: black;
 }
 
 .highlight {
