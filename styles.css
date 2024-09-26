@@ -6,9 +6,10 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #fff;
 }
 
 a {
@@ -20,69 +21,115 @@ a {
 header {
   background-image: url('background.png');
   background-size: cover;
-  background-position: top center;
-  padding: 20px 50px;
+  background-position: top;
+  padding: 20px;
   text-align: center;
-  color: white;
+  color: #333;
+  height: 100vh;
 }
 
 /* Navigation */
-.nav ul {
-  list-style: none;
+.nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  justify-content: flex-end;
 }
 
-.nav ul li {
-  margin: 0 15px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  font-size: 1.25rem;
+.menu-icon {
+  font-size: 1.5rem;
   color: #333;
-  transition: color 0.3s ease;
-}
-
-.nav ul li a {
-  font-weight: bold;
+  cursor: pointer;
 }
 
 /* Hero Section */
 .hero-text {
-  padding-top: 100px;
-  max-width: 700px;
+  max-width: 90%;
   margin: 0 auto;
+  padding-top: 150px;
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
-  color: black;
+  font-size: 2rem;
+  color: #172b4d;
 }
 
 .hero-text h2 {
-  font-size: 2.25rem;
-  color: #4caf50;
+  font-size: 1.75rem;
+  color: #36b37e;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
 .hero-text p {
-  color: black;
-}
-
-.highlight {
-  color: #4caf50;
+  font-size: 1.1rem;
+  color: #172b4d;
+  line-height: 1.6;
+  margin-top: 20px;
 }
 
 /* Social Media Icons */
 .social-icons {
-  margin-top: 30px;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
 }
 
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.25rem;
+  color: #505f79;
+  
+  transition: color 0.3s ease;
+}
+
 .social-icons a:hover {
-  color: #4caf50;
+  color: #36b37e;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .menu-icon {
+    font-size: 1.25rem;
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-text {
+    padding-top: 100px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a {
+    font-size: 1.25rem;
+  }
+
+  .menu-icon {
+    font-size: 1.5rem;
+  }
 }
