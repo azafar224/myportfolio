@@ -26,38 +26,129 @@
 
     <!-- Main Content -->
     <main>
+      <!-- Hero Section -->
       <header class="hero">
         <div class="hero-text">
           <h1>
             Hey there.<br />
             I'm Alex.
           </h1>
-          <h2>I'm a <br /><span>software developer</span></h2>
+          <h2>I'm a <br />developer</h2>
           <p>
             I can help you build a product, feature, or website. Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don't hesitate to contact me.
           </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-medium"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fas fa-hand-peace"></i></a>
+          </div>
+        </div>
+        <!-- Add background image pattern on the right side -->
+        <div class="hero-background">
+          <img src="background.png" alt="Illustration" />
         </div>
       </header>
 
-      <!-- Social Links -->
-      <section class="social-icons">
-        <a href="#" target="_blank" aria-label="Twitter"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="#" target="_blank" aria-label="LinkedIn"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="#" target="_blank" aria-label="Medium"
-          ><i class="fab fa-medium"></i
-        ></a>
-        <a href="#" target="_blank" aria-label="GitHub"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="#" target="_blank" aria-label="Peace"
-          ><i class="fas fa-hand-peace"></i
-        ></a>
+      <!-- My Recent Work Section -->
+      <section class="recent-work">
+        <h2>
+          My Recent <br />
+          Works
+        </h2>
+        <div class="work-grid">
+          <!-- Each work item contains an image placeholder -->
+          <div class="work-item">
+            <img src="card.jpg" alt="Project 1 Image" />
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <div class="tags">
+              <span>Ruby on Rails</span> <span>CSS</span>
+              <span>JavaScript</span> <span>HTML</span>
+            </div>
+            <button>See project</button>
+          </div>
+          <div class="work-item">
+            <img src="card.jpg" alt="Project 2 Image" />
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <div class="tags">
+              <span>Ruby on Rails</span> <span>CSS</span>
+              <span>JavaScript</span> <span>HTML</span>
+            </div>
+            <button>See project</button>
+          </div>
+          <div class="work-item">
+            <img src="card.jpg" alt="Project 3 Image" />
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <div class="tags">
+              <span>Ruby on Rails</span> <span>CSS</span>
+              <span>JavaScript</span> <span>HTML</span>
+            </div>
+            <button>See project</button>
+          </div>
+          <div class="work-item">
+            <img src="card.jpg" alt="Project 4 Image" />
+            <h3>Multi-Post Stories Gain+Glory</h3>
+            <div class="tags">
+              <span>Ruby on Rails</span> <span>CSS</span>
+              <span>JavaScript</span> <span>HTML</span>
+            </div>
+            <button>See project</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          I'm always curious to learn more whenever I get the chance. I love
+          creating new things, be it websites or software that can help others.
+        </p>
+        <button>Get my resume</button>
+      </section>
+
+      <!-- Skills and Frameworks Section -->
+      <section class="skills-frameworks">
+        <div class="skills-container">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="skills-container">
+          <h3>Frameworks</h3>
+          <div class="tags">
+            <span>Bootstrap</span> <span>Ruby on Rails</span>
+            <span>Node</span>
+          </div>
+        </div>
+        <div class="skills-container">
+          <h3>Skills</h3>
+          <div class="tags">
+            <span>Code Review</span> <span>Pair Programming</span>
+            <span>Debugging</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact">
+        <p>
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </p>
+        <form class="contact-form">
+          <input type="text" placeholder="Full name" required />
+          <input type="email" placeholder="Email address" required />
+          <textarea
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+          <button type="submit">Get in touch</button>
+        </form>
       </section>
     </main>
   </body>
