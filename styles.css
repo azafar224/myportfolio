@@ -10,10 +10,6 @@ body {
   line-height: 1.6;
   color: #172b4d;
   background-color: #fff;
-  background-image: url("background.png");
-  background-size: cover;
-  background-position: top center;
-  background-attachment: fixed;
 }
 
 a {
@@ -21,46 +17,47 @@ a {
   color: #172b4d;
 }
 
-/* App Bar */
-.app-bar {
+/* Navigation (App Bar) */
+nav.app-bar {
   background-color: #fff;
   color: #172b4d;
   padding: 15px 20px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 0;
 }
 
 .menu-icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #172b4d;
   cursor: pointer;
+  border: none;
+  background: none;
 }
 
-/* Header Section */
-header {
-  padding: 20px;
-  text-align: center;
-  color: #172b4d;
-  height: 100vh;
-  padding-top: 75px;
-}
-
-/* Navigation */
-.nav {
-  display: flex;
-  justify-content: flex-end;
+.menu-icon:focus {
+  outline: none;
 }
 
 /* Hero Section */
+header.hero {
+  padding-top: 10px;
+  text-align: center;
+  color: #172b4d;
+  background-image: url("background.png");
+  background-size: 100%;
+  background-position: top center;
+  height: max-content;
+  z-index: 1;
+}
+
 .hero-text {
   max-width: 90%;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .hero-text h1 {
@@ -76,23 +73,22 @@ header {
 }
 
 .hero-text p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: #172b4d;
   line-height: 1.6;
   margin-top: 20px;
-  padding: 0 50px;
 }
 
-/* Social Media Icons */
-.social-icons {
+/* Social Media Section */
+section.social-icons {
   margin-top: 5px;
   display: flex;
   justify-content: center;
 }
 
 .social-icons a {
-  margin: 0 10px;
-  font-size: 1.25rem;
+  margin: 10px 10px;
+  font-size: 1rem;
   color: #505f79;
   transition: color 0.3s ease;
 }
@@ -102,28 +98,6 @@ header {
 }
 
 /* Media Queries for Mobile */
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 1.75rem;
-  }
-
-  .hero-text h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  .menu-icon {
-    font-size: 1.25rem;
-  }
-
-  .social-icons a {
-    margin: 0 8px;
-  }
-}
-
 @media (max-width: 375px) {
   .hero-text {
     padding-top: 100px;
